@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Cookie&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    @apply font-body transition-all;
+}
+h1, h2, h3, h4, h5, h6 {
+    @apply font-title;
+}
+
+#menu li a {
+    @apply relative z-20;
+}
+
+#menu li a::before {
+    @apply content-[''] absolute top-1/2 left-0 bg-red-500 inline-block w-full h-0 -z-10 transition-all;
+    
+}
+
+#menu li a:hover::before {
+    @apply h-3;
+}
+
+#home .owl-carousel >div {
+    @apply w-full relative;
+}
+
+#home .owl-carousel >div img {
+     @apply w-full h-full object-cover object-center;
+
+}
+
+#home .owl-carousel > div .content {
+    @apply absolute top-1/2 left-[10%] -translate-y-1/2 w-1/2;
+}
+
+.card i {
+    @apply text-5xl;
+}
+
+.card h2 {
+    @apply font-title text-2xl capitalize my-5 font-bold text-gray-500;
+}
+
+.card p {
+    @apply text-gray-500 leading-7;
+
+}
+
+.card .container > div:nth-of-type(2) {
+    @apply bg-gray-200;
+}
+
+.card .container > div {
+    @apply p-10 w-96 bg-white;
+}
+
+.card .container {
+    @apply flex flex-wrap justify-center;
+}
+
+.card {
+    @apply relative -top-40 z-10;
+}
+
+#dishes {
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.5)),url('image/coffee-424763_1280.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.info {
+    @apply font-info text-4xl text-red-500 capitalize mb-4;
+
+}
+
+.title {
+    @apply text-4xl text-black capitalize font-bold mb-8;
+}
+
+.btn {
+    @apply px-6 py-3 inline-block font-semibold tracking-wide uppercase hover:bg-red-500 hover:text-white;
+}
+
