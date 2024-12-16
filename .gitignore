@@ -1,0 +1,7 @@
+
+# Ignore node_modules folder
+node_modules/
+
+# Ignore everything inside OwlCarousel2-2.3.4 except dist/
+OwlCarousel2-2.3.4/*
+!OwlCarousel2-2.3.4/dist/
